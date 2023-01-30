@@ -1,12 +1,12 @@
-name: configure
-hosts: all
+- name: Configure
+  hosts: all
 
-roles:
-  - jimmage.pets
-  - geerlingguy.pip
-  - geerlingguy.docker
+  roles:
+    - jimmage.pets
+    - geerlingguy.pip
+    - geerlingguy.docker
 
-tasks:
-  - name: Set hostname
-    ansible.builtin.hostname:
-      name: setsuko
+  tasks:
+    - name: Set hostname
+      ansible.builtin.hostname:
+        name: setsuko
