@@ -1,0 +1,5 @@
+roles:
+  - name: jimmage.pets
+    src: https://github.com/JimMadge/pets
+  - name: geerlingguy.docker
+  - name: geerlingguy.pip

@@ -1,0 +1,12 @@
+name: configure
+hosts: all
+
+roles:
+  - jimmage.pets
+  - geerlingguy.pip
+  - geerlingguy.docker
+
+tasks:
+  - name: Set hostname
+    ansible.builtin.hostname:
+      name: setsuko
